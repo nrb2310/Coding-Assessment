@@ -1,0 +1,29 @@
+# Q4)
+# Create a Vector class with x and y attributes that represent component magnitudes in the x and y directions. Your vectors should handle vector additon with an  
+# .add() method that takes a second vector as an argument and returns a new vector equal to the sum of the vector you call .add() on and the vector you pass in.
+
+class Vector:
+  def __init__(self, x, y):
+    self.x = x
+    self.y = y
+  
+  def add(self,V2):
+    
+    x_sum = V1.x + V2.x
+    y_sum = V1.y + V2.y
+
+    print("\nSum Vector is: ("+str(x_sum)+","+str(y_sum)+")")
+
+V1 = Vector(3,4)
+V2 = Vector(1,2)
+
+print("\n1st Vector: ")
+print("X-Magnitude: "+str(V1.x))
+print("Y-Magnitude: "+str(V1.y))
+
+print("\n2nd Vector: ")
+print("X-Magnitude: "+str(V2.x))
+print("Y-Magnitude: "+str(V2.y))
+
+print("\nVector Sum: ")
+V1.add(V2)
